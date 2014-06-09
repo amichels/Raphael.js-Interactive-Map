@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    padding:0;
+}
+#paper{
+    width:959px;
+    height:593px;
+    border:1px solid #ccc;
+    position:relative;
+    overflow:hidden;
+} 
+#infoPane{
+    font-family:sans-serif;
+    color:#fff;
+    background-color:#90ae00;
+    padding:0.8em;
+    opacity:0.8;
+    position:absolute;
+    top:593;
+    right:0;
+    left:0;
+    height:150px;
+}
+#infoPane h2{
+    margin:0;
+    float:left;
+    width:90%;
+    font-size:40px;
+}
+#close-bt{
+    font-weight:bold;
+    color:#fff;
+    background-color:#555;
+    padding:3px 7px;
+    font-size:16px;
+    border-radius:3px;
+    text-decoration:none;
+    float:right;
+    transition: background-color 1s;
+}
+#close-bt:hover{background-color:#777;}
+#paper path{
+    cursor:pointer;
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    transition: fill 1s;
+}
+#paper path:hover{
+    fill: #90ae00;
+}
+#paper path.active-state{
+    fill: #555;
+}
